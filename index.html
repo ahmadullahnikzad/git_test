@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav{
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: #ccc;
+            overflow-y: scroll;
+            
+        }
+        nav ul{
+            list-style: none;
+            padding: 0;
+        }
+        ul li{
+            line-height: 30px;
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 15px;
+        }
+        li a:hover{
+            text-decoration: underline;
+            background-color: #ddd;
+        }
+        article{
+            float: left;
+            width: 70%;
+            height: 300px;
+            padding: 20px;
+        }
+        section::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: gray;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size-adjust: 30px;
+        }
+        @media (max-width: 600px){
+            nav,article{
+                width: 100%;
+                height: auto;
+                overflow-y: hidden;
+            }
+        }
+    </style>
+    <header>
+        <h2>Cities</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+                <li><a href="#">Kabul</a></li>
+                <li><a href="#">Ankara</a></li>
+                <li><a href="#">Tehran</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>London</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum harum velit repellendus inventore, voluptates corporis quasi a ducimus doloribus deserunt, saepe laborum. Laudantium laboriosam praesentium modi expedita, illum numquam mollitia?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, voluptate quibusdam. Veritatis, consectetur obcaecati! Quaerat aliquid soluta dolorem, vel ab libero autem. Ratione, corporis ea atque saepe accusantium architecto molestiae.
+            </p>
+        </article>
+    </section>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
+git clone git@github.com:ahmadullahnikzad/git_test.git
